@@ -12,6 +12,7 @@ import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
 import ProjectDetails from "./components/Dialog/ProjectDetails";
+
 import { useState } from "react";
 
 const Body = styled.div`
@@ -50,6 +51,7 @@ function App() {
               <Hero />
               <Wrapper>
                 <Skills />
+                
                 <Experience />
               </Wrapper>
               <Projects openModal={openModal} setOpenModal={setOpenModal} />

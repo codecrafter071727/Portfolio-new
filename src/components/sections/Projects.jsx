@@ -126,25 +126,13 @@ const Projects = ({ openModal, setOpenModal }) => {
             active={toggle === "android app"}
             onClick={() => setToggle("android app")}
           >
-            ANDROID APP'S
-          </ToggleButton>
-          <Divider />
-          <ToggleButton
-            active={toggle === "machine learning"}
-            onClick={() => setToggle("machine learning")}
-          >
-            MACHINE LEARNING
+          
+          
+            
           </ToggleButton>
         </ToggleButtonGroup>
         <CardContainer>
-          {toggle === "all" &&
-            projects.map((project) => (
-              <ProjectCard
-                project={project}
-                openModal={openModal}
-                setOpenModal={setOpenModal}
-              />
-            ))}
+          
           {projects
             .filter((item) => item.category === toggle)
             .map((project) => (
